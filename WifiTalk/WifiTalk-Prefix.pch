@@ -1,0 +1,23 @@
+//
+// Prefix header for all source files of the 'WifiTalk' target in the 'WifiTalk' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <AVFoundation/AVFoundation.h>
+    #import <QuartzCore/QuartzCore.h>
+    #import <CoreMedia/CoreMedia.h>
+    #import "JSON.h"
+    #import "NSString+StringPadding.h"
+    #import "NSString+Hex.h"
+#endif
+
+
+#define VideoURL [NSURL URLWithString:@"http://lrcapp.eonline.com/video/premieres/lfrc_2012bet_rida_v2_186394.m3u8"]
